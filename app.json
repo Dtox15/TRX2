@@ -1,0 +1,33 @@
+{
+  "name": "AllTube Download",
+  "description": "",
+  "repository": "",
+  "logo": "",
+  "keywords": [
+    "alltube",
+    "download",
+    "video",
+    "youtube",
+    "php"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "PYTHON": {
+      "description": "Path to python binary",
+      "value": "/app/.heroku/python/bin/python"
+    },
+    "STREAM": {
+      "description": "Enable stream mode",
+      "value": "false",
+      "required": false
+    }
+  },
+  "website": ""
+}
